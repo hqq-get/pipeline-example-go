@@ -16,10 +16,9 @@ stages:
       buildContext: .
       tag: example-helloserver:${CICD_EXECUTION_SEQUENCE}
       registry: harbor.changingedu.com
-  env:
+    env:
      PLUGIN_DEBUG: "true"
      PLUGIN_INSECURE: "true"
-      
 - name: Deploy
   steps:
   - applyYamlConfig:
