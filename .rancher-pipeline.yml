@@ -15,7 +15,6 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: example-helloserver:${CICD_EXECUTION_SEQUENCE}
-      registry: harbor.changingedu.com
     env:
       PLUGIN_DEBUG: "true"
       PLUGIN_INSECURE: "true"
