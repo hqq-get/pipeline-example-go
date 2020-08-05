@@ -15,6 +15,7 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: example-helloserver:${CICD_EXECUTION_SEQUENCE}
+      registry: harbor.changingedu.com
 - name: Deploy
   steps:
   - applyYamlConfig:
